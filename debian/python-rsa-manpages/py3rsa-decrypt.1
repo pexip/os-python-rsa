@@ -1,0 +1,22 @@
+.TH py3rsa\-decrypt 1
+.SH NAME
+\fBpy3rsa\-decrypt\fP \- decrypt a file
+.SH SYNOPSIS
+\fBpy3rsa\-decrypt\fP [\fI\,OPTION\/\fR]... \fI\,PRIVATE_KEY\/\fR
+.SH DESCRIPTION
+Decrypt a file. The original file must be shorter than the key length in order to have been encrypted.
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-i \fIINPUT\fR, \fB\-\-input=\fIINPUT\fR
+name of the file to decrypt. read from stdin if not specified.
+.TP
+\fB\-o \fIOUTPUT\fR, \fB\-\-output=\fIOUTPUT\fR
+name of the file to write the decrypted file to. write to stdout if this option is not present.
+.TP
+\fB\-\-keyform=\fIKEYFORM\fR
+key format of the private key \- default PEM
+.SH AUTHOR
+\fB\,py3rsa\-decrypt\fR was written by Sybren A. Stuvel <sybren AT stuvel.eu>.

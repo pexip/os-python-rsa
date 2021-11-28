@@ -1,0 +1,30 @@
+Source: python-rsa
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: TANIGUCHI Takaki <takaki@debian.org>
+Build-Depends: debhelper-compat (= 13)
+        , dh-python
+	, python3-all
+	, python3-setuptools
+  , python3-unittest2
+  , python3-pyasn1
+  , python3-mock
+  , mypy
+Standards-Version: 4.6.0
+Homepage: http://stuvel.eu/rsa
+X-Python-Versioni: >= 2.7
+X-Python3-Versioni: >= 3.2
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-rsa.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-rsa
+
+Package: python3-rsa
+Architecture: all
+Depends: python3, ${python3:Depends}, ${misc:Depends}
+Description: Pure-Python RSA implementation (Python 3)
+ Python-RSA is a pure-Python RSA implementation. It supports encryption
+ and decryption, signing and verifying signatures, and key generation
+ according to PKCS#1 version 1.5. It can be used as a Python library as
+ well as on the commandline. The code was mostly written by Sybren A. Stüvel.
+ .
+ This package contains the module for Python 3.

@@ -1,0 +1,22 @@
+.TH py3rsa\-keygen 1
+.SH NAME
+\fBpy3rsa\-keygen\fP \- generate a new RSA keypair
+.SH SYNOPSIS
+\fBpy3rsa\-keygen\fP [\fI\,OPTION\/\fR]... \fI\,KEYSIZE\/\fR
+.SH DESCRIPTION
+Generate a new RSA keypair of \fI\,KEYSIZE\/\fR bits.
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-\-pubout=\fR\fI\,PUBOUT\fR
+output filename for the public key. the public key is not saved if this option is not present. you can use \fBpy3rsa\-priv2pub\fR to create the public key file later.
+.TP
+\fB\-o \fR\fI\,OUT\fR, \fB\-\-out=\fR\fI\,OUT\fR
+output filename for the private key. the key is written to stdout if this option is not present.
+.TP
+\fB\-\-form=\fR\fI\,FORM\/\fR
+key format of the private and public keys \- default PEM
+.SH AUTHOR
+\fB\,py3rsa\-keygen\fR was written by Sybren A. Stuvel <sybren AT stuvel.eu>.

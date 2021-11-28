@@ -1,0 +1,21 @@
+.TH py3rsa\-verify 1
+.SH NAME
+\fBpy3rsa\-verify\fP \- verify a signature
+.SH SYNOPSIS
+\fBpy3rsa\-verify\fP [\fI\,OPTION\/\fR]... \fI\,PUBLIC_KEY SIGNATURE_FILE\/\fR
+.SH DESCRIPTION
+Verify a signature, exit with status 0 upon success, print an error message and exit with status 1 upon error.
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-i \fIINPUT\fR, \fB\-\-input=\fIINPUT\fR
+name of the signed file to verify. Read from stdin if not specified.
+.TP
+\fB\-\-keyform=\fIKEYFORM\fR
+key format of the public key \- default PEM
+.SH EXIT STATUS
+0 if signature can be verified, 1 otherwise.
+.SH AUTHOR
+\fB\,py3rsa\-verify\fR was written by Sybren A. Stuvel <sybren AT stuvel.eu>.

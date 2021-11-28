@@ -1,0 +1,23 @@
+.TH py3rsa\-encrypt 1
+.SH NAME
+\fBpy3rsa\-encrypt\fP \- encrypt a file
+.SH SYNOPSIS
+\fBpy3rsa\-encrypt\fP [\fI\,OPTION\/\fR]... \fI\,PUBLIC_KEY\/\fR
+.SH DESCRIPTION
+Encrypt a file. The file must be shorter than the key length in order to be encrypted.
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-i \fIINPUT\fR, \fB\-\-input=\fIINPUT\fR
+name of the file to encrypt. read from stdin if not specified.
+.TP
+\fB\-i \fIOUTPUT\fR, \fB\-\-output=\fIOUTPUT\fR
+name of the file to write the encrypted file to. write to stdout if this option is not present.
+.TP
+\fB\-\-keyform=\fIKEYFORM\fR
+key format of the public key \- default PEM
+.SH AUTHOR
+\fB\,py3rsa\-encrypt\fR was written by Sybren A. Stuvel <sybren AT stuvel.eu>.
+

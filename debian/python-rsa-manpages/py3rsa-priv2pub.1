@@ -1,0 +1,25 @@
+.TH py3rsa\-priv2pub 1
+.SH NAME
+\fBpy3rsa\-priv2pub\fP \- read a private key and output the corresponding public key
+.SH SYNOPSIS
+\fBpy3rsa\-priv2pub\fP [\fI\,OPTION\/\fR]...
+.SH DESCRIPTION
+Read a private key and output the corresponding public key. Both private and public key use the format described in PKCS#1 v1.5
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-i \fIINFILENAME\fR, \fB\-\-input=\fIINFILENAME\fR
+input filename. Read from stdin if not specified
+.TP
+\fB\-i \fIOUTFILENAME\fR, \fB\-\-output=\fIOUTFILENAME\fR
+output filename. write to stdout of not specified
+.TP
+\fB\-\-inform=\fIINFORM\fR
+key format of input \- default PEM
+.TP
+\fB\-\-outform=\fIOUTFORM\fR
+key format of output \- default PEM
+.SH AUTHOR
+\fB\,py3rsa\-priv2pub\fR was written by Sybren A. Stuvel <sybren AT stuvel.eu>.
