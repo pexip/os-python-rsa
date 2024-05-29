@@ -1,8 +1,9 @@
 Source: python-rsa
 Section: python
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: TANIGUCHI Takaki <takaki@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper-compat (= 13)
         , dh-python
 	, python3-all
@@ -17,6 +18,7 @@ X-Python-Versioni: >= 2.7
 X-Python3-Versioni: >= 3.2
 Vcs-Git: https://salsa.debian.org/python-team/packages/python-rsa.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/python-rsa
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: python3-rsa
 Architecture: all
