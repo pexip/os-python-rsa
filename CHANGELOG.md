@@ -1,6 +1,17 @@
 # Python-RSA changelog
 
-## Version 4.8 - in development
+## Version 4.9 - release 2022-07-20
+
+- Remove debug logging from `rsa/key.py`
+  ([#194](https://github.com/sybrenstuvel/python-rsa/issues/194)).
+- Remove overlapping slots in `PrivateKey` and `PublicKey`.
+  ([#189](https://github.com/sybrenstuvel/python-rsa/pull/189)).
+- Do not include CHANGELOG/LICENSE/README.md in wheel
+  ([#191](https://github.com/sybrenstuvel/python-rsa/pull/191)).
+- Fixed Key Generation Unittest: Public and Private keys are assigned the wrong way around
+  ([#188](https://github.com/sybrenstuvel/python-rsa/pull/188)).
+
+## Version 4.8 - released 2021-11-24
 
 - Switch to [Poetry](https://python-poetry.org/) for dependency and release management.
 - Compatibility with Python 3.10.
